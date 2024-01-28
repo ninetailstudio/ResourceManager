@@ -9,7 +9,8 @@ public:
 
     virtual ~Resource() = default;
 
-    virtual ResourceType Load(const std::string& path) = 0;
+    virtual ResourceType Load(const std::string& path) = 0; //Read
+    // virtual void Save(); // Write
     virtual void Unload() = 0;
     virtual ResourceType Reload(const std::string& path) = 0;
     virtual ResourceType getData() = 0;
